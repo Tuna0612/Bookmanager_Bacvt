@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_user">
+
+    <fragment
+        android:id="@+id/nav_user"
+        android:name="com.macbook.bookmanager.fragment.UserFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_user" />
+
+    <fragment
+        android:id="@+id/nav_the_loai"
+        android:name="com.macbook.bookmanager.fragment.TheLoaiFragment"
+        android:label="@string/typebook"
+        tools:layout="@layout/fragment_the_loai" />
+
+    <fragment
+        android:id="@+id/nav_sach"
+        android:name="com.macbook.bookmanager.fragment.SachFragment"
+        android:label="@string/book"
+        tools:layout="@layout/fragment_sach" />
+
+    <fragment
+        android:id="@+id/nav_hoa_don"
+        android:name="com.macbook.bookmanager.fragment.HoaDonFragment"
+        android:label="@string/bill"
+        tools:layout="@layout/fragment_hoa_don" />
+</navigation>
