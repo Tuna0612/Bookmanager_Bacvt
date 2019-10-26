@@ -17,9 +17,9 @@ import java.util.List;
 public class HoaDonDAO {
     private static SQLiteDatabase db;
     private DatabaseManager dbHelper;
-    public static final String TABLE_NAME = "HoaDon";
-    public static final String SQL_HOA_DON = "CREATE TABLE HoaDon (mahoadon NCHAR(7) primary key, ngaymua date);";
-    public static final String TAG = "HoaDonDAO";
+    static final String TABLE_NAME = "HoaDon";
+    static final String SQL_HOA_DON = "CREATE TABLE HoaDon (mahoadon NCHAR(7) primary key, ngaymua date);";
+    private static final String TAG = "HoaDonDAO";
     static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
     public HoaDonDAO(Context context) {

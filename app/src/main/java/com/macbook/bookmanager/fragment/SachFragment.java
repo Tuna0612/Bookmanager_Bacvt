@@ -35,8 +35,8 @@ public class SachFragment extends Fragment {
     private CardView cardSave, cardCancel;
     private Spinner spnTheLoai;
 
-    public static List<Sach> listSach;
-    public static List<TheLoai> listTheLoai;
+    private static List<Sach> listSach;
+    private static List<TheLoai> listTheLoai;
 
     String maTheLoai = "";
 

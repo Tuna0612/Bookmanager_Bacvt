@@ -18,6 +18,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
         db.execSQL(TheLoaiDAO.SQL_THE_LOAI);
         db.execSQL(SachDAO.SQL_SACH);
         db.execSQL(HoaDonDAO.SQL_HOA_DON);
+        db.execSQL(HoaDonChiTietDAO.SQL_HOA_DON_CHI_TIET);
 
     }
 
@@ -27,6 +28,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
         db.execSQL("Drop table if exists " + TheLoaiDAO.TABLE_NAME);
         db.execSQL("Drop table if exists " + SachDAO.TABLE_NAME);
         db.execSQL("Drop table if exists " + HoaDonDAO.TABLE_NAME);
+        db.execSQL("Drop table if exists " + HoaDonChiTietDAO.TABLE_NAME);
         onCreate(db);
     }
 }

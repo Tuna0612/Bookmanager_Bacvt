@@ -57,7 +57,7 @@ public class UserDAO {
         return dsUser;
     }
 
-    public User getUser() {
+    public User getUser(String username) {
         List<User> dsUser = new ArrayList<>();
         User ee = new User();
         Cursor c = db.query(TABLE_NAME, null, null, null, null, null, null);

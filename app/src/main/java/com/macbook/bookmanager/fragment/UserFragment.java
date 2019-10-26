@@ -32,14 +32,13 @@ public class UserFragment extends Fragment {
     private UserAdapter adapter;
     private List<User> listUser;
     private CardView cardSave, cardCancel;
-    private FloatingActionButton fab;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = LayoutInflater.from(getContext()).inflate(R.layout.fragment_user, container, false);
         rcViewUser = view.findViewById(R.id.rcViewUser);
-        fab = view.findViewById(R.id.fab);
+        FloatingActionButton fab = view.findViewById(R.id.fab);
         userDAO = new UserDAO(getContext());
         listUser = new ArrayList<>();
         listUser = userDAO.getAllUser();

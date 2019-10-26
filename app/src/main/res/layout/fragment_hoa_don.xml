@@ -7,7 +7,7 @@
     tools:context=".fragment.HoaDonFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcViewProfile"
+        android:id="@+id/rcViewBill"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
